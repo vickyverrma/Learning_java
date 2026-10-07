@@ -10,7 +10,7 @@ class human {
         this.age=age;
         this.name=name;
         this.salary=salary;
-        human.population +=1;
+        human.population +=1; // we can use this keyword also but since the static belongs to class so we have access it via class name
     }
     @Override
     public String toString()
