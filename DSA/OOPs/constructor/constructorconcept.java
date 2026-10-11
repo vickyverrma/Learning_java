@@ -1,4 +1,4 @@
-package OOPs;
+package OOPs.constructor;
 class std{
     String name;
     std(String name)

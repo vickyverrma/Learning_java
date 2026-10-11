@@ -1,4 +1,4 @@
-package OOPs;
+package OOPs.constructor;
 class abc1 {
     int x = 10;
     int y = 5;
