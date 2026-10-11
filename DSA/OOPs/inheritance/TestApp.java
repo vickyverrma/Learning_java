@@ -1,9 +1,11 @@
 package OOPs.inheritance;
+//base-class or super class or parent class
 class humanSpecies{
     public String name;
     public int age;
     public String sex;
 }
+//derived class or child class or sub class --> now student class has 6 properties
 class student extends humanSpecies{
     public String Course;
     public int rollno;
