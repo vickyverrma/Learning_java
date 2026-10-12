@@ -1,12 +1,12 @@
 package OOPs.constructor;
 
-class Student {
+class Student2 {
 
     String name;
     int rollNo;
     int age;
 
-    Student()
+    Student2()
     {
         name = "unknow";
         rollNo = 5;
@@ -25,7 +25,7 @@ public class first {
 
     public static void main(String[] args) {
 
-        Student s1 = new Student();
+        Student2 s1 = new Student2();
 
 //        s1.name = "Vicky";
 //        s1.rollNo = 101;

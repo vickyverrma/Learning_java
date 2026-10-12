@@ -1,8 +1,8 @@
 package OOPs.constructor;
-class Student1{
+class Student{
     String name;
     int age;
-    Student1()
+    Student()
     {
         System.out.println("Constructor has been called");
     }
@@ -15,7 +15,7 @@ class Student1{
 }
 public class zeroArgument {
     public static void main(String[] args) {
-    Student1 s1 = new Student1();
+    Student s1 = new Student();
     s1.display("Vicky",22);
     }
 }
