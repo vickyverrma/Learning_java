@@ -3,7 +3,7 @@ class Loan{
 //    static variable
     static float RateofIntrest = 6.7f;
 }
-public class TestApp2 {
+public class TestApp2Static {
     public static void main(String[] args) {
 //        Loan a = new Loan();
 //        static variable can be accessed using two method 1- using className 2 using reference variable

@@ -6,7 +6,7 @@ class claculator{
         System.out.println("The sum is :: " + result);
     }
 }
-public class TestApp {
+public class TestAppLocal {
     public static void main(String[] args) {
         claculator c = new claculator();
         c.add(4,5);
