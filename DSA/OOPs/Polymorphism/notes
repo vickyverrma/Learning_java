@@ -1,0 +1,8 @@
+Polymorphism
+    Poly -> Many
+    morphism -> forms
+a. static polymorphism   -> eg: Method overloading, Method Hiding
+b. dynamic polymorphism  -> eg: Method overriding
+
+Method-overloading
+Two methods is said to be overloaded, iff both the methods have same name but different argument tyes
