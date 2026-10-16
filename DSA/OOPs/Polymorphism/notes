@@ -5,4 +5,25 @@ a. static polymorphism   -> eg: Method overloading, Method Hiding
 b. dynamic polymorphism  -> eg: Method overriding
 
 Method-overloading
-Two methods is said to be overloaded, iff both the methods have same name but different argument tyes
+Two methods is said to be overloaded, iff both the methods have same name but different argument types
+In case of method-overloading, Compiler will bind the call of the method to the body of method.
+JVM should just execute the method body, so we say Method-overloading as "CompileTimeBinding/EarlyBinding".
+
+                    implicit-TypeCasting
+
+byte ⇨ short ↘️
+                int ⇨ long ⇨ float ⇨ double
+         char ↗️
+
+⇦ ─────────────────────────────────────
+                    explicit-TypeCasting
+
+
+Overloading
+
+Compiler binding the call based on argument
+    a. if exact match is found bind the call
+    b. if exact match not found, perform
+       implicit typecasting till it reaches to bind
+    c. upon implicit typecasting still if the call
+       can't be bind, it would result in "CE"
