@@ -30,9 +30,13 @@ Compiler binding the call based on argument
 
 ---------------------------------------------------------------------------------------------------------------------
 
-Overridding
+Overriding
 During inheritance, the parent class method implementation would not match the needs of the child class
 so child class will take the method name, but it will change the implementation as per the needs of the child class.
 
 In case of overriding, JVM will bind the method calls based on the runtime object, but not on the reference type so
 we say overriding has "TruePolymorphism/LateBinding/RuntimeBinding"
+
+Rules of Overriding
+1 In case of overriding, we can't change the return-type of the method, if we want to change then
+ there should be relationship bow return-type of the methods
