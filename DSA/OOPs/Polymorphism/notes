@@ -42,3 +42,5 @@ Rules of Overriding
  there should be relationship bow return-type of the methods
 2 while overriding, we_can't reduce the scope of access modifier.
         private< default < protected < public
+
+3 Private methods won't take participate in inheritance
