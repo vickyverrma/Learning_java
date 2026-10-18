@@ -40,7 +40,13 @@ we say overriding has "TruePolymorphism/LateBinding/RuntimeBinding"
 Rules of Overriding
 1 In case of overriding, we can't change the return-type of the method, if we want to change then
  there should be relationship bow return-type of the methods
+ 
 2 while overriding, we_can't reduce the scope of access modifier.
         private< default < protected < public
 
-3 Private methods won't take participate in inheritance
+3 Private methods won't take participate in inheritance.
+
+4 final is an access modifer applicable at
+    a. variable => If applied at variable level, then the value can't be changed.
+    b. method => If applied at method level, then we can't override the method.
+    c. class => If applied at class level, then the class won't be inherited.
