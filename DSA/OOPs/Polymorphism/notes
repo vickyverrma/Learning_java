@@ -46,7 +46,11 @@ Rules of Overriding
 
 3 Private methods won't take participate in inheritance.
 
-4 final is an access modifer applicable at
+4 final is an access modifier applicable at
     a. variable => If applied at variable level, then the value can't be changed.
     b. method => If applied at method level, then we can't override the method.
     c. class => If applied at class level, then the class won't be inherited.
+
+5  abstract is an access modifier applicable at
+    a. method -> If we are not giving the body for a method then mark the method as as "abstract".
+    b. class -> If we don't want the object to be created for a class, then mark the the class as "abstract".
