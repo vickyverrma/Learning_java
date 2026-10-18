@@ -40,7 +40,7 @@ we say overriding has "TruePolymorphism/LateBinding/RuntimeBinding"
 Rules of Overriding
 1 In case of overriding, we can't change the return-type of the method, if we want to change then
  there should be relationship bow return-type of the methods
- 
+
 2 while overriding, we_can't reduce the scope of access modifier.
         private< default < protected < public
 
