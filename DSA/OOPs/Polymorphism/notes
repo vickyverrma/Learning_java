@@ -58,3 +58,23 @@ Rules of Overriding
 
   In case of overriding, compulsorily the child class should give implementation for all the abstract methods present
  in the parent class, if the implementation is not given then that child class should be marked as "abstract"
+
+In Java abstraction can be achieved by using
+    a. Abstract Class
+    b. Interface
+
+In real word, for few cases object should not be created, to handle such scenarios in java
+we need go for a keyword called "abstract".
+
+abstract access modifier can be applied at
+    a. class level    -> yes possible, if we make class as abstract then object can't be instantiated.
+    b. method level   -> yes possible, if we make method as abstract, then we can't give body for the methods.
+    c. variable level -> no we can't use abstract at variable level.
+
+Rules of abstract access-modifier in java
++++++++++++++++++++++++++++++++++++++++++
+
+    1. If a class contains at-least one abstract method, then mark the class as "abstract".
+
+
+
