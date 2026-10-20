@@ -75,6 +75,33 @@ Rules of abstract access-modifier in java
 +++++++++++++++++++++++++++++++++++++++++
 
     1. If a class contains at-least one abstract method, then mark the class as "abstract".
+    2. abstract class can't be instantiated.
+    3. for an abstract class, we can create a reference,but not the object.
+    4. Inside abstract class, we can write concrete methods also.
+    5. If a parent class is abstract, then compulsorily the child class should give
+    implementation for all the abstract
+    methods otherwise the child class also would become "abstract".
+    6. Even if the class doesn't contain abstract methods/concrete method still we can
+    mark the empty class as "abstract".
+
+Can we create an Object for abstract class?
+Ans. No.
+
+When will the constructor gets called?
+Ans. During the creation of an Object.
+
+Does abstract class has constructor?
+Ans. yes
+
+Why we need constructor in abstract class, when we can't instantiate an object?
+Ans. To get the properties of parent class to child class, we need constructors in
+abstract class also.
+
+Note:
+1. abstract class contains concrete methods and abstract methods, so we say
+through abstract class 100% abstraction can't be
+achieved.
+2. To achieve 100% abstraction, we need to go for "interfaces".
 
 
 

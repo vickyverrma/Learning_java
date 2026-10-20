@@ -1,4 +1,8 @@
+//Exposing the set of services but hiding the internal implementation
+//abstract class Plane
+
 package OOPs.Polymorphism;
+
 abstract class Plane
 {
     public abstract void takeOff();
@@ -44,10 +48,10 @@ class FighterPlane extends Plane
 }
 class Airport1
 {
-    public void allowPlane(Plane ref){
-        ref.takeOff();
-        ref.fly();
-        ref.land();
+    public void allowPlane(Plane abc){
+        abc.takeOff();
+        abc.fly();
+        abc.land();
         System.out.println();
     }
 }
