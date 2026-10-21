@@ -1,7 +1,7 @@
 //Exposing the set of services but hiding the internal implementation
 //abstract class Plane
 
-package OOPs.Polymorphism;
+package OOPs.Polymorphism.Abstract;
 
 abstract class Plane
 {

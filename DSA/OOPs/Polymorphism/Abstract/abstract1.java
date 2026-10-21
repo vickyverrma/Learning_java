@@ -1,4 +1,4 @@
-package OOPs.Polymorphism;
+package OOPs.Polymorphism.Abstract;
  abstract class parent2 {
     public abstract void methodone();
 }

@@ -1,6 +1,4 @@
-package OOPs.Polymorphism;
-
-import org.w3c.dom.ls.LSOutput;
+package OOPs.Polymorphism.Abstract;
 
 abstract class bird{
     public abstract void fly();

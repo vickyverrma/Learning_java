@@ -1,4 +1,4 @@
-package OOPs.Polymorphism;
+package OOPs.Polymorphism.Abstract;
 class parents{
     public void property()
     {

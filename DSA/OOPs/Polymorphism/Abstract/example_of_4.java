@@ -1,4 +1,4 @@
-package OOPs.Polymorphism;
+package OOPs.Polymorphism.Abstract;
 class plane{
     public void takeOff()
     {

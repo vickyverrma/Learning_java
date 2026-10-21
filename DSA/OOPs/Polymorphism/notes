@@ -10,14 +10,15 @@ In case of method-overloading, Compiler will bind the call of the method to the 
 JVM should just execute the method body, so we say Method-overloading as "CompileTimeBinding/EarlyBinding".
 
                     implicit-TypeCasting
-
-byte ⇨ short ↘️
-                int ⇨ long ⇨ float ⇨ double
-         char ↗️
-
-⇦ ─────────────────────────────────────
-                    explicit-TypeCasting
-
+_____________________________________________________
+|                                                   |
+| byte ⇨ short ↘️                                   |
+|               int ⇨ long ⇨ float ⇨ double         |
+|        char ↗️                                    |
+|                                                   |
+|  ⇦ ─────────────────────────────────────          |
+|                   explicit-TypeCasting            |
+|___________________________________________________|
 
 Overloading
 
@@ -60,6 +61,7 @@ Rules of Overriding
  in the parent class, if the implementation is not given then that child class should be marked as "abstract"
 
 In Java abstraction can be achieved by using
+********************************************
     a. Abstract Class
     b. Interface
 
@@ -103,5 +105,46 @@ through abstract class 100% abstraction can't be
 achieved.
 2. To achieve 100% abstraction, we need to go for "interfaces".
 
+*********************************************************
+*           Pillars of oops                             *
+*           +++++++++++++++                             *
+*   1. Data-hiding (using private access modifier)      *
+*   2. Abstraction(using abstract class and interfaces) *
+*   3. Encapsulation = Data-hiding + Abstraction        *
+*   4. Polymorphism(Overloading, Overriding)            *
+*********************************************************
+
+
+interfaces in java
+++++++++++++++++++
+1. In java interfaces has been introduced to provide "SRS".
+    SRS -> Software Requirement Specification.
+2. In java interfaces would act like a contract b/w the client and the service provider.
+    In java interfaces also represents the mechanism to put rules from the client
+    end to the service provider
+    eg: JDBC API (rules given by SUNMS) for Database vendors like MySQL,
+    Oracle,Sybase .....
+    Servlet API(rules given by SUNMS) for Server vendors like Tomcat,
+    Glassfish, JBoss,......
+3. In java interfaces always represents 100%abstraction.
+    -> Inside java interfaces we can write only abstract methods,we can't write concrete methods
+    
+Note: Inside interface the methods we write always indicates "public and abstract".
+
+eg#1.
+interface ICalculator
+{
+//public abstract
+void add(int a,int b);
+void sub(int a,int b);
+void mul(int a,int b);
+void div(int a,int b);
+}
+=> interfaces should be implemented by a class.
+=> Which ever class is implementing an interface that class should compulsorily
+give the body for all the abstract methods
+present in the interface.
+=> if the implementation class fails to give the body for atleast one abstract
+methods then that class would become abstract class.
 
 

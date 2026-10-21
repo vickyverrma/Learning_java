@@ -1,4 +1,4 @@
-package OOPs.Polymorphism;
+package OOPs.Polymorphism.Abstract;
 class calculator {
 //    method over-ridding same method name but different argument or method signature
     public void add(int a, int b)

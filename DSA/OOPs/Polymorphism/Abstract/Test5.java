@@ -1,10 +1,10 @@
-package OOPs.Polymorphism;
+package OOPs.Polymorphism.Abstract;
 //class parent {
 //    public final void  methodOne()
 //    {
 //        System.out.println("parentclass::methodOne");
 //        O/P
-//        java: methodOne() in OOPs.Polymorphism.childfinal cannot override methodOne() in OOPs.Polymorphism.parent
+//        java: methodOne() in OOPs.Polymorphism.Abstract.childfinal cannot override methodOne() in OOPs.Polymorphism.Abstract.parent
 //  overridden method is final
 //    }
 //}

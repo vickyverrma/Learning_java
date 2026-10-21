@@ -1,4 +1,4 @@
-package OOPs.Polymorphism;
+package OOPs.Polymorphism.Abstract;
 class Animal {
     public void eat()
     {
