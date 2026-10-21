@@ -5,11 +5,8 @@ interface Icalculator{
     void mul(int a , int b);
     void div(int a , int b);
 }
- class calculatorImp implements Icalculator{
+ abstract class calculatorImp implements Icalculator{
 
-    public void add(int a, int b) {
-        System.out.println("The sum is "+ (a+b));
-    }
     public void sub(int a, int b) {
         System.out.println("The subtraction is "+ (a+b));
     }
@@ -23,8 +20,15 @@ interface Icalculator{
 
 public class Calculator {
     public static void main(String[] args) {
-        Icalculator c = new calculatorImp();
+        Icalculator c = new calculatorImp() {
+            public void add(int a, int b) {
+                System.out.println("The sum is "+(a+b));
+            }
+        };
         c.add(3,4);
+        c.sub(7,8);
+        c.mul(21,1);
+        c.div(4,2);
 
     }
 }

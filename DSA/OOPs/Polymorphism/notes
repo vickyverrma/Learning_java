@@ -84,7 +84,7 @@ Rules of abstract access-modifier in java
     implementation for all the abstract
     methods otherwise the child class also would become "abstract".
     6. Even if the class doesn't contain abstract methods/concrete method still we can
-    mark the empty class as "abstract".
+       mark the empty class as "abstract".
 
 Can we create an Object for abstract class?
 Ans. No.
@@ -128,7 +128,7 @@ interfaces in java
     Glassfish, JBoss,......
 3. In java interfaces always represents 100%abstraction.
     -> Inside java interfaces we can write only abstract methods,we can't write concrete methods
-    
+
 Note: Inside interface the methods we write always indicates "public and abstract".
 
 eg#1.
@@ -142,9 +142,51 @@ void div(int a,int b);
 }
 => interfaces should be implemented by a class.
 => Which ever class is implementing an interface that class should compulsorily
-give the body for all the abstract methods
-present in the interface.
+give the body for all the abstract methods present in the interface.
 => if the implementation class fails to give the body for atleast one abstract
 methods then that class would become abstract class.
+ ex-
+ _________________________________________________________________________________________________________________
+ package OOPs.Polymorphism.Interface;
+ interface Icalculator{
+     void add(int a , int b);
+     void sub(int a , int b);
+     void mul(int a , int b);
+     void div(int a , int b);
+ }
+ // ** here child class failed to give body of add method so this class marked as abstract. **
+  abstract class calculatorImp implements Icalculator{
+
+     public void sub(int a, int b) {
+         System.out.println("The subtraction is "+ (a+b));
+     }
+     public void mul(int a, int b) {
+         System.out.println("The multiplication is "+ (a+b));
+     }
+     public void div(int a, int b) {
+         System.out.println("The division is "+ (a+b));
+     }
+ }
+
+ public class Calculator {
+     public static void main(String[] args) {
+         Icalculator c = new calculatorImp() {
+             public void add(int a, int b) {
+                 System.out.println("The sum is "+(a+b));
+             }
+         };
+         c.add(3,4);
+         c.sub(7,8);
+         c.mul(21,1);
+         c.div(4,2);
+
+     }
+ }
+_______________________________________________________________________________________________________________
+we achieve multiple inheritance using interface in java
+-> in abstraction one class inherits the property of one class ata a time but interface can inherits multiple class
+    at a time which is required for the multiple inheritance.
+
+
 
 
